@@ -1,0 +1,533 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+.headTitle {
+    width: 100%;
+    height: auto;
+    padding: 15px 0;
+    padding-left: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DEF6EB;
+    border-bottom: 1px solid rgba(203, 143, 126, 0.11);
+}
+
+.logo {
+    width: 300px;
+    height: 100%;
+}
+
+.logo>img {
+    width: 100%;
+    height: 100%;
+}
+
+.sequre {
+    width: 370px;
+}
+
+.sequre>img {
+    width: 100%;
+}
+
+.main {
+    background-color: gainsboro;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.dataSale {
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+}
+
+.leftTxt {
+    width: 120px;
+}
+
+.countDownTimeNum>p,
+.leftTxt {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.countDownTimeNum>span {
+    font-weight: 600;
+}
+
+.countdownPart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    width: 550px;
+    padding-right: 110px;
+    color: rgb(208, 2, 27);
+    margin-bottom: 30px;
+}
+
+.countDownTime {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+
+}
+
+.countDownTime>p {
+    font-weight: 700;
+    font-size: 20px;
+
+}
+
+.countDownTime>span {
+    font-size: 18px;
+
+}
+
+.countDownTimeNum {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.step1Part {
+    padding: 10px 25px;
+}
+
+.step1Part>h4 {
+    margin-bottom: 20px;
+}
+
+.underTitLine {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.firstSectionContain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.productSale {
+    width: 100%;
+    border: 1px solid #E8E8EA;
+    padding: 7px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 3px;
+    color: rgb(37, 42, 50);
+    cursor: pointer;
+}
+
+.productSaleContain {
+    display: flex;
+    align-items: center;
+}
+
+.priceSalePart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.radio {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+.salePrice {
+    color: rgb(37, 42, 50);
+    font-size: 20px;
+    text-decoration: line-through;
+}
+
+.newPrice {
+    color: rgb(230, 0, 0);
+    font-size: 18px;
+}
+
+.proImg {
+    width: 70px;
+    margin-right: 10px;
+}
+
+.proImg>img {
+    width: 100%;
+}
+
+.checkedStyle {
+    background: #ff0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2), 0 5px 15px rgba(0, 0, 0, .11);
+    border: 0;
+
+}
+
+.productSale:hover {
+    background: #ff0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2), 0 5px 15px rgba(0, 0, 0, .11);
+    border: 0;
+
+}
+
+.step2PartRegistration {
+    border: 1px solid rgb(224, 224, 224);
+    ;
+    border-radius: 10px;
+    padding: 28px 14px;
+    background-color: white;
+}
+
+.step2PartRegistration>h3 {
+    margin-bottom: 20px;
+}
+
+.registrationInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.nameInputs {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.input {
+    background-color: rgb(245, 245, 245);
+    border-radius: 3px;
+    border-style: none;
+    border-color: transparent;
+    color: rgb(37, 42, 50);
+    font-size: 14px;
+    text-align: left;
+    width: 100%;
+    padding: 13px 15px;
+}
+
+.step3RightPart {
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 10px;
+    padding: 28px 14px;
+    background-color: white;
+}
+.step3RightPart > h3 {
+    margin-bottom: 20px;
+}
+.step3Rows1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.cardInfo {
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 10px;
+    padding-top: 7px;
+    background-color: white;
+}
+.firstSection {
+    display: flex;
+    gap: 20px;
+}
+.cardInfoIcons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 0 10px;
+    align-items: center;
+    border-bottom: 1px solid rgb(224, 224, 224);
+}
+.yellowCircl {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #f4743c
+}
+.dealIcon {
+    width: 40px;
+}
+.dealIcon > img {
+    width: 100%;
+}
+.cardPart {
+    width: 500px;
+}
+.selectBank {
+    background-color: #fafafa;
+    text-align: center;
+}
+.selectBankContain {
+    padding: 10px 7px;
+}
+.selectBankContain > h3 {
+    margin-bottom: 20px;
+}
+
+
+.custom-select {
+    min-width: 350px;
+    position: relative;
+    
+  }
+  
+  .custom-select select {
+    appearance: none;
+    width: 100%;
+    font-size: 15px;
+    padding: 15px 7px;
+    background-color: #fff;
+    border: 1px solid #caced1;
+    border-radius: 3px;
+    color: #000;
+    cursor: pointer;
+  }
+  
+  .custom-select::before,
+  .custom-select::after {
+    --size: 5px;
+    content: "";
+    position: absolute;
+    right: 1rem;
+    pointer-events: none;
+  }
+  
+  .custom-select::before {
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid black;
+    top: 40%;
+  }
+  
+  .custom-select::after {
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid black;
+    top: 55%;
+  }
+  .bankIcon {
+    width: 15px;
+  }
+  .bankIcon > img {
+    width: 100%;
+  }
+  .radioYellow {
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border:1px solid gainsboro;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  .bancontact {
+    border: 1px solid gainsboro;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .bankImg {
+    width: 30px;
+  }
+  .bankImg >img {
+    width: 100%;
+  }
+  .radioYellow > span {
+    margin-left: 30px;
+  }
+  .cardsPhoto {
+    display: flex;
+  }
+  .worninPartContain {
+    border: 2px dashed rgb(253, 204, 94);
+    margin: 20px 10px 0px;
+    padding: 15px;
+    border-radius: 3px;
+    background-color: rgba(253, 204, 94, 0.1);
+  }
+  .checkedPart {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .inputStyle {
+    width: 25px;
+    height: 25px;
+  }
+  .checkedPart > span {
+    font-weight: 600;
+  }
+  .redSpan {
+    color: rgb(255, 0, 0);
+    font-size: 13px;
+  }
+  .dashedTxt {
+    color:  #636a7b;;
+  }
+  .boldStyle {
+    font-weight: 600;
+  }
+  .dashedTxt > p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 170%;
+    color: #636a7b;
+    margin: 0;
+    text-align: left
+  }
+  .userCommentsPart {
+    width: 100%;
+    padding: 15px 10px;
+  }
+  .userCommentsPartContain {
+    text-align: center;
+  }
+  .userCommentsPartContain > h3 {
+    margin-bottom: 20px;
+  }
+  .commentsContain {
+    display: flex;
+    align-items: center;
+  }
+  .bold {
+    font-weight: 600;
+  }
+  .grey {
+    color: rgb(155, 155, 155);
+    font-size: 13px;
+  }
+
+  .flex {
+    display: flex;
+  }
+  .userPic {
+    width: 40px;
+    margin-right: 15px;
+  }
+  .userPic > img {
+    width: 100%;
+    border-radius: 50%;
+  }
+  .commentTxtPart2 {
+    text-align: left;
+    padding: 9px 11px 9px 54px;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  .trustPilot {
+    display: flex;
+    width: 300px;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  .fullCommentPart {
+    border-top: 1px solid gainsboro;
+    padding: 9px 0;
+  }
+  .stars {
+    width: 360px;
+    display: flex;
+  }
+  .starsImgContain {
+    width: 240px;
+    align-items: center;
+  }
+  .starsImg {
+    width: 70px;
+    display: flex;
+    gap: 5px;
+  }
+  .trustPilotImg {
+    width: 85px;
+  }
+  .trustPilotImg > img {
+    width: 100%;
+  }
+  .starsImg > img {
+    width: 100%;
+  }
+  .section3 {
+    width: 100%;
+    padding: 10px 0
+  }
+  .section3Contain {
+    width: 900px;
+    margin: auto;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    padding: 30px 15px;
+  }
+  .section3Contain > h2 {
+    margin-bottom: 20px;
+    text-align: center;
+
+  }
+  .borderedPart {
+    width: 100%;
+    border: 2px solid gray;
+    border-radius: 3px;
+    padding: 7px 5px;
+  }
+  .DreamEaseTxt {
+    padding: 20px 30px;
+    color: rgb(50, 50, 50);
+    line-height: 1.5;
+    font-size: 14px;
+  }
+  .AIContains {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+  }
+  footer {
+    padding: 60px 0px;
+    background-color: rgb(30, 30, 30);
+    color: rgba(255, 255, 255, 0.72);
+}
+.contactInfoPart {
+    display: flex;
+    justify-content: space-around;
+}
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 16px;
+    color: #fff!important;
+}
+.footerRightPart >h4 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+.footerRightPartMenu {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.footerRightPartMenu > li > a {
+    color: rgba(255, 255, 255, 0.72);
+}
+.infoImg {
+    width: 470px;
+}
+.infoImg > img {
+    width: 100%;
+}

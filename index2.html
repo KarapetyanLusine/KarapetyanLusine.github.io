@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="media.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>refresh page</title>
+</head>
+
+<body>
+    <header>
+        <div class="headTitle">
+            <div class="logo">
+                <img src="images/1715548212-DreamEase (1.75 x 0.5 Mailing Label).webp" alt="">
+            </div>
+            <div class="sequre">
+                <img src="https://img.funnelish.com/43005/347637/1715967069-SLL.png" alt="">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main">
+            <div class="firstSection">
+                <div class="">
+                    <div class="dataSale">
+                        <div class="countdownPart">
+                            <div class="leftTxt">
+                                <p>Beperkte voorraad</p>
+                            </div>
+                            <div class="countDownTime">
+                                <div class="countDownTimeNum">
+                                    <p id="hours"></p>
+                                    <span>Uren</span>
+                                </div>
+                                <div class="countDownTimeNum">
+                                    <p id="minute"></p>
+                                    <span>Minuten</span>
+                                </div>
+                                <div class="countDownTimeNum">
+                                    <p id="seconde"></p>
+                                    <span>Seconden</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step1Part">
+                            <h4>STAP 1: KIES AANTAL BESTELLINGEN</h4>
+                            <div class="underTitLine">
+                                <div class="productSale" id="productSale" for="radio1">
+                                    <div class="productSaleContain">
+                                        <input type="radio" name="option" class="radio" id="radio1"
+                                            onclick="checkRadio()">
+                                        <div class="proImg">
+                                            <img src="https://img.funnelish.com/43005/345061/1715604660-DreamEase%201x.png?height=220&width=220&auto=webp&fit=bounds"
+                                                alt="">
+                                        </div>
+                                        <span>1 x DreamEase™ (50% KORTING)</span>
+                                    </div>
+                                    <div class="priceSalePart">
+                                        <p class="salePrice">€60</p>
+                                        <p class="newPrice">€29.95</p>
+                                    </div>
+                                </div>
+                                <div class="productSale" id="productSale" for="radio2">
+                                    <div class="productSaleContain">
+                                        <input type="radio" name="option" class="radio" id="radio2"
+                                            onclick="checkRadio()">
+                                        <div class="proImg">
+                                            <img src="https://img.funnelish.com/43005/345061/1715604660-DreamEase%201x.png?height=220&width=220&auto=webp&fit=bounds"
+                                                alt="">
+                                        </div>
+                                        <span>1 x DreamEase™ (50% KORTING)</span>
+                                    </div>
+                                    <div class="priceSalePart">
+                                        <p class="salePrice">€60</p>
+                                        <p class="newPrice">€29.95</p>
+                                    </div>
+                                </div>
+                                <div class="productSale" id="productSale" for="radio2">
+                                    <div class="productSaleContain" for="radio3">
+                                        <input type="radio" name="option" class="radio" id="radio3"
+                                            onclick="checkRadio()">
+                                        <div class="proImg">
+                                            <img src="https://img.funnelish.com/43005/345061/1715604660-DreamEase%201x.png?height=220&width=220&auto=webp&fit=bounds"
+                                                alt="">
+                                        </div>
+                                        <span>1 x DreamEase™ (50% KORTING)</span>
+                                    </div>
+                                    <div class="priceSalePart">
+                                        <p class="salePrice">€60</p>
+                                        <p class="newPrice">€29.95</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="step2PartRegistration">
+                        <h3>STAP 2: KLANTINFORMATIE</h3>
+                        <div class="registrationInfo">
+                            <div class="nameInputs">
+                                <input type="text" placeholder="Voornaam" class="input">
+                                <input type="text" placeholder="AchternaamLast Name" class="input">
+                            </div>
+                            <div>
+                                <input type="text" placeholder="E-mail" class="input">
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Telefoon" class="input">
+                            </div>
+                            <div>
+                                <form>
+                                    <select id="country" name="country" class="input">
+                                        <option value="Land">Land</option>
+                                        <option value="Nederland">Nederland</option>
+                                        <option value="Belgium">Belgium</option>
+                                    </select>
+                                </form>
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Straatnaam" class="input">
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Stad" class="input">
+                            </div>
+                            <div class="nameInputs">
+                                <input type="text" placeholder="Staat/Provincie" class="input">
+                                <input type="text" placeholder="Postcode" class="input">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardPart">
+                    <div class="step3RightPart">
+                        <h3>STAP 3: BETAALMETHODE</h3>
+                        <div class="step3Rows1">
+                            <div class="cardInfo">
+                                <div class="cardInfoIcons">
+                                    <div class="yellowCircl"></div>
+                                    <div class="dealIcon">
+                                        <img src="https://img.funnelish.com/default/ideal-logo.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="selectBank">
+                                    <div class="selectBankContain">
+                                        <h3>Select your bank below</h3>
+                                        <div class="custom-select">
+                                            <select>
+                                                <option value="">Select Blank</option>
+                                                <option value=""
+                                                    data-thumbnail="https://js.stripe.com/v3/fingerprinted/img/abnamro-4445e65420800f96f68cfc67a273f66b.svg">
+
+                                                    <span class="bankIcon">
+                                                        <img src="images/abnamro-4445e65420800f96f68cfc67a273f66b.svg"
+                                                            alt="">
+                                                    </span>
+                                                    <span>ABN Amro</span>
+
+                                                </option>
+                                                <option value="">ASN Bank</option>
+                                                <option value="">iDEAL bank</option>
+                                                <option value="">ING Bank</option>
+                                                <option value="">Knab</option>
+                                                <option value="">SNS Bank</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bancontact">
+                                    <div class="radioYellow">
+                                        <span>Bancontact</span>
+                                    </div>
+                                    <div class="bankImg">
+                                        <img src="https://img.funnelish.com/default/Bancontact-logo.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="bancontact">
+                                    <div class="radioYellow">
+                                        <span>Credit/Debit</span>
+                                    </div>
+                                    <div class="cardsPhoto">
+                                        <div class="bankImg">
+                                            <img src="https://img.funnelish.com/default/Bancontact-logo.svg" alt="">
+                                        </div>
+                                        <div class="bankImg">
+                                            <img src="https://img.funnelish.com/default/Bancontact-logo.svg" alt="">
+                                        </div>
+                                        <div class="bankImg">
+                                            <img src="https://img.funnelish.com/default/Bancontact-logo.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="worninPart">
+                                <div class="worninPartContain">
+                                    <div class="checkedPart">
+                                        <input type="checkbox" data-selected="true" name="" id="" class="inputStyle">
+                                        <span>Ja, ik wil een spoedverzending + levenslange garantie voor MAAR
+                                            €4,95</span>
+                                    </div>
+                                    <div class="dashedTxt">
+                                        <p>
+                                            <span class="redSpan">EENMALIGE AANBIEDING!</span> Ontvang uw pakket <span
+                                                class="boldStyle">dubbel zo snel en</span> krijg levenslange
+                                            garantie: Heeft u <span class="boldStyle">niet de gewenste</span>
+                                            resultaten? Dan krijgt uw
+                                            <span class="boldStyle">geld gemakkelijk terug!</span> Dit voor slechts
+                                            €4,95!
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="userCommentsPart">
+                                <div class="userCommentsPartContain">
+                                    <h3>Wat Klanten Zeggen over DreamEase™ :</h3>
+                                    <div class="fullCommentPart">
+                                        <div class="commentsContain">
+                                            <div class="userPic">
+                                                <img src="https://img.funnelish.com/43005/345061/1715592621-Untitled%20design%20%2812%29.png"
+                                                    alt="">
+                                            </div>
+
+                                            <div class="stars">
+                                                <div class="flex starsImgContain">
+                                                    <div class="starsImg">
+                                                        <img src="https://img.funnelish.com/3986/26453/1653346065-tps.svg"
+                                                            alt="">
+                                                    </div>
+                                                    <span class="bold"> - Isaac F.</span>
+                                                </div>
+                                                <div class="trustPilot">
+                                                    <span class="grey bold">Geplaatst op</span>
+                                                    <div class="trustPilotImg">
+                                                        <img src="https://img.funnelish.com/3986/26453/1653346254-trustpilot%20%281%29.svg"
+                                                            alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="commentTxtPart2">
+                                            <p class="bold grey">Het is heel comfortabel om te slapen!</p>
+                                            <p>"Ik wou dat ik dit eerder had gekocht. Het zit erg comfortabel. Na een
+                                                aantal nachten deze slaapband te hebben gebruikt, moet ik zeggen dat ik
+                                                er perfect mee op mijn zij kan slapen. De hoofdpijn die ik had toen ik
+                                                wakker werd, is bijna verdwenen. Bovendien doet hij ook goed dienst als
+                                                oogmasker."</p>
+                                        </div>
+                                    </div>
+                                    <div class="fullCommentPart">
+                                        <div class="commentsContain">
+                                            <div class="userPic">
+                                                <img src="https://img.funnelish.com/43005/345061/1715592621-Untitled%20design%20%2812%29.png"
+                                                    alt="">
+                                            </div>
+
+                                            <div class="stars">
+                                                <div class="flex starsImgContain">
+                                                    <div class="starsImg">
+                                                        <img src="https://img.funnelish.com/3986/26453/1653346065-tps.svg"
+                                                            alt="">
+                                                    </div>
+                                                    <span class="bold"> - Isaac F.</span>
+                                                </div>
+                                                <div class="trustPilot">
+                                                    <span class="grey bold">Geplaatst op</span>
+                                                    <div class="trustPilotImg">
+                                                        <img src="https://img.funnelish.com/3986/26453/1653346254-trustpilot%20%281%29.svg"
+                                                            alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="commentTxtPart2">
+                                            <p class="bold grey">Het is heel comfortabel om te slapen!</p>
+                                            <p>"Ik wou dat ik dit eerder had gekocht. Het zit erg comfortabel. Na een
+                                                aantal nachten deze slaapband te hebben gebruikt, moet ik zeggen dat ik
+                                                er perfect mee op mijn zij kan slapen. De hoofdpijn die ik had toen ik
+                                                wakker werd, is bijna verdwenen. Bovendien doet hij ook goed dienst als
+                                                oogmasker."</p>
+                                        </div>
+                                    </div>
+                                    <div class="fullCommentPart">
+                                        <div class="commentsContain">
+                                            <div class="userPic">
+                                                <img src="https://img.funnelish.com/43005/345061/1715592621-Untitled%20design%20%2812%29.png"
+                                                    alt="">
+                                            </div>
+
+                                            <div class="stars">
+                                                <div class="flex starsImgContain">
+                                                    <div class="starsImg">
+                                                        <img src="https://img.funnelish.com/3986/26453/1653346065-tps.svg"
+                                                            alt="">
+                                                    </div>
+                                                    <span class="bold"> - Isaac F.</span>
+                                                </div>
+                                                <div class="trustPilot">
+                                                    <span class="grey bold">Geplaatst op</span>
+                                                    <div class="trustPilotImg">
+                                                        <img src="https://img.funnelish.com/3986/26453/1653346254-trustpilot%20%281%29.svg"
+                                                            alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="commentTxtPart2">
+                                            <p class="bold grey">Het is heel comfortabel om te slapen!</p>
+                                            <p>"Ik wou dat ik dit eerder had gekocht. Het zit erg comfortabel. Na een
+                                                aantal nachten deze slaapband te hebben gebruikt, moet ik zeggen dat ik
+                                                er perfect mee op mijn zij kan slapen. De hoofdpijn die ik had toen ik
+                                                wakker werd, is bijna verdwenen. Bovendien doet hij ook goed dienst als
+                                                oogmasker."</p>
+                                        </div>
+                                    </div>
+                                    <div class="fullCommentPart">
+                                        <div class="commentsContain">
+                                            <div class="userPic">
+                                                <img src="https://img.funnelish.com/43005/345061/1715592621-Untitled%20design%20%2812%29.png"
+                                                    alt="">
+                                            </div>
+
+                                            <div class="stars">
+                                                <div class="flex starsImgContain">
+                                                    <div class="starsImg">
+                                                        <img src="https://img.funnelish.com/3986/26453/1653346065-tps.svg"
+                                                            alt="">
+                                                    </div>
+                                                    <span class="bold"> - Isaac F.</span>
+                                                </div>
+                                                <div class="trustPilot">
+                                                    <span class="grey bold">Geplaatst op</span>
+                                                    <div class="trustPilotImg">
+                                                        <img src="https://img.funnelish.com/3986/26453/1653346254-trustpilot%20%281%29.svg"
+                                                            alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="commentTxtPart2">
+                                            <p class="bold grey">Het is heel comfortabel om te slapen!</p>
+                                            <p>"Ik wou dat ik dit eerder had gekocht. Het zit erg comfortabel. Na een
+                                                aantal nachten deze slaapband te hebben gebruikt, moet ik zeggen dat ik
+                                                er perfect mee op mijn zij kan slapen. De hoofdpijn die ik had toen ik
+                                                wakker werd, is bijna verdwenen. Bovendien doet hij ook goed dienst als
+                                                oogmasker."</p>
+                                        </div>
+                                    </div>
+                                </div>
+                             </div>
+                         </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="section3">
+            <div class="section3Contain">
+                <h2>Al uw Vragen Beantwoord:</h2>
+                <div class="AIContains">
+                    <div class="AIContainsLine">
+                        <div class="borderedPart">
+                            <h2>Werkt DreamEase™ voor mij?</h2>
+                        </div>
+                        <p class="DreamEaseTxt">
+                            DreamEase™ is ontworpen om te voldoen aan de behoeften van mensen met verschillende
+                            slaappatronen en migrainegevoeligheden. Met zijn geavanceerde technologie die zich richt op
+                            de kernoorzaken van slecht slapen en hoofdpijn, is het geschikt voor iedereen die streeft
+                            naar beter slapen en minder hoofdpijn.
+                        </p>
+                    </div>
+                    <div class="AIContainsLine">
+                        <div class="borderedPart">
+                            <h2>Helpt dit bij mijn specifieke slaapproblemen?</h2>
+                        </div>
+                        <p class="DreamEaseTxt">
+                            DreamEase™ is ontworpen om te voldoen aan de behoeften van mensen met verschillende
+                            slaappatronen en migrainegevoeligheden. Met zijn geavanceerde technologie die zich richt op
+                            de kernoorzaken van slecht slapen en hoofdpijn, is het geschikt voor iedereen die streeft
+                            naar beter slapen en minder hoofdpijn.
+                        </p>
+                    </div>
+                    <div class="AIContainsLine">
+                        <div class="borderedPart">
+                            <h2>Is DreamEase™ geschikt voor alle leeftijden?</h2>
+                        </div>
+                        <p class="DreamEaseTxt">
+                            DreamEase™ is ontworpen om te voldoen aan de behoeften van mensen met verschillende
+                            slaappatronen en migrainegevoeligheden. Met zijn geavanceerde technologie die zich richt op
+                            de kernoorzaken van slecht slapen en hoofdpijn, is het geschikt voor iedereen die streeft
+                            naar beter slapen en minder hoofdpijn.
+                        </p>
+                    </div>
+                    <div class="AIContainsLine">
+                        <div class="borderedPart">
+                            <h2>Hoe kan ik het product terugsturen en mijn geld terugkrijgen?</h2>
+                        </div>
+                        <p class="DreamEaseTxt">
+                            DreamEase™ is ontworpen om te voldoen aan de behoeften van mensen met verschillende
+                            slaappatronen en migrainegevoeligheden. Met zijn geavanceerde technologie die zich richt op
+                            de kernoorzaken van slecht slapen en hoofdpijn, is het geschikt voor iedereen die streeft
+                            naar beter slapen en minder hoofdpijn.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <div class="contactInfoPart">
+            <div class="contactInfoContain">
+                <h4>CONTACT US</h4>
+                <div class="contactInfo">
+                    <div class="address">
+                        <p>
+                            <span>📍</span>
+                            <span>67 Hoofdstraat</span>
+                        </p>
+                        <p>12 AB Amsterdam, Nederland</p>
+                    </div>
+                    <div class="email">
+                        <p>
+                            <span>E-mail us:</span>support@beahea.com
+                        </p>
+                        <p>
+                            <span>Call us:</span> +31 6 189645549
+                        </p>
+                    </div>
+                    <div>
+                        <p><span>🕙</span>Maandag - Vrijdag: 08:00 - 22:00</p>
+                        <p><span>🕕</span>Zaterdag - Zondag: 08:00 - 18:00</p>
+
+                    </div>
+                    <div>
+                        <p>We proberen al uw vragen binnen 24 uur te beantwoorden.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footerRightPart">
+                <h4>INFORMATION</h4>
+                <ul class="footerRightPartMenu">
+                    <li><a href="">Terugbetalingsbeleid</a></li>
+                    <li><a href="">Privacybeleid</a></li>
+                    <li><a href="">Algemene voorwaarden</a></li>
+                    <li><a href="">Shipping policy</a></li>
+                    <li><a href="">Contactgegevens</a></li>
+                </ul>
+                <div>
+                    <div class="infoImg">
+                        <img src="https://img.funnelish.com/43005/345061/1715890373-DREAM.png" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script2.js"></script>
+</body>
+
+</html>

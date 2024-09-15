@@ -1,0 +1,279 @@
+@media only screen and (max-width: 1247px) {
+    .firstSection {
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 1194px) {
+    .firstSection {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .slider {
+        width: 320px;
+    }
+
+    .firstSectionLeftPart {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 547px) {
+    .recensiesPart {
+        width: 300px;
+    }
+
+    .firstSectionRightPart {
+        width: 320px;
+        padding: 0 10px;
+    }
+
+    .pricePart {
+        flex-direction: column;
+    }
+
+    .saleAmount {
+        margin: auto;
+    }
+
+    .guaranteesIconTxt {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .userComment {
+        width: 308px;
+    }
+
+    .orderSave>a>span {
+        font-size: 17px;
+    }
+
+}
+
+@media only screen and (max-width: 1330px) {
+    .rightPartGif {
+        width: 335px;
+    }
+
+    .realExperienceTxt>p {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 1147px) {
+
+    .realExperienceContain,
+    .realExperienceContain2 {
+        flex-direction: column;
+    }
+
+    .realExperienceContain,
+    .realExperienceContain2 {
+        margin: 50px;
+    }
+
+    .gifPart {
+        display: flex;
+        justify-content: center;
+    }
+
+    .realExperienceLeftPart2,
+    .realExperienceLeftPart {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 407px) {
+    .realExperienceLeftPart>h1 {
+        font-size: 18px;
+    }
+
+    .realExperienceLeftPart2>h1 {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 407px) {
+    .orderSave>a>span {
+        font-size: 12px;
+    }
+
+    .rightPartGif {
+        width: 240px;
+    }
+}
+
+@media only screen and (max-width: 394) {
+    .aboutProduct>p {
+        font-size: 10px;
+
+    }
+}
+
+@media only screen and (max-width: 1426px) {
+    .thirdSection>ul>li {
+        width: 150px
+    }
+}
+
+@media only screen and (max-width: 1090px) {
+    .thirdSection>ul {
+        margin: 0 40px;
+    }
+}
+
+@media only screen and (max-width: 741px) {
+    .thirdSection>ul>li {
+        width: 98px
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .thirdSection>ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 907px) {
+    .userComments {
+        width: 300px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .positiveReview {
+        align-items: center;
+        gap: 10px;
+    }
+
+    .positiveReviewTxt>p {
+        font-size: 15px;
+    }
+
+    .userComments {
+        padding: 40px 0;
+    }
+
+    .section4>h1 {
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 907px) {
+    .userCommentsContain {
+        width: 310px;
+    }
+}
+
+@media only screen and (max-width: 544px) {
+    .menuTxt {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 814px) {
+    .section7Contain {
+        flex-direction: column;
+    }
+
+    .section7ContainImg {
+        width: 300px;
+    }
+
+    .section7ContainrightPart {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 930px) {
+    footer {
+        padding: 10px 20px;
+    }
+}
+
+@media only screen and (max-width: 796px) {
+    .contactInfoPart {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        padding-left: 26px;
+    }
+
+}
+
+@media only screen and (max-width: 601px) {
+    .stickyImg {
+        width: 180px;
+    }
+}
+
+@media only screen and (max-width: 529px) {
+    .infoImg {
+        width: 210px;
+    }
+}
+
+@media only screen and (max-width: 911px) {
+    .section3Contain {
+        width: 310px;
+    }
+
+    .borderedPart>h2 {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 911px) {
+    .countdownPart {
+        width: 310px;
+    }
+
+    .countdownPart {
+        flex-direction: column;
+        width: auto;
+        padding-right: unset;
+    }
+
+    .productSale {
+        flex-direction: column;
+    }
+
+    .cardPart {
+        width: 310px;
+    }
+
+    .custom-select {
+        min-width: unset;
+    }
+
+    .trustPilot {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 554px) {
+    .sequre {
+        display: none;
+    }
+
+    .headTitle {
+        padding-left: unset;
+    }
+
+    .logo {
+        width: 180px;
+    }
+}

@@ -1,0 +1,852 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height: 100%;
+}
+
+.headTitle {
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DEF6EB;
+    border-bottom: 1px solid rgba(203, 143, 126, 0.11);
+}
+
+.headTitle>div {
+    width: 280px;
+    height: 100%;
+}
+
+.headTitle>div>img {
+    width: 100%;
+    height: 100%;
+}
+
+.firstSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 52px;
+    padding: 40px 0;
+    background-image: url("https://img.funnelish.com/10101/169449/1700600465-Progetto%20senza%20titolo%20-%202023-11-21T230044.068.png?auto=webp&clip=bounds");
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.firstSectionLeftPart {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.slider {
+    position: relative;
+    width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.thumbnails {
+    text-align: center;
+    margin-top: 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+    overflow-y: scroll;
+    width: 90%;
+}
+
+.thumbnails img {
+    width: 80px;
+    height: auto;
+    cursor: pointer;
+    margin: 0 5px;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    display: inline-block;
+    opacity: .7;
+}
+
+.thumbnails img.active-thumbnail {
+    border: 3px solid #708090;
+    opacity: 1;
+}
+
+.recensiesPart {
+    width: 540px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 18px;
+    border-bottom: 1px solid rgba(203, 143, 126, 0.39);
+}
+
+.recensiesPart>h1 {
+    margin-bottom: 18px;
+}
+
+.recensiesPart>h3>span {
+    color: rgba(0, 0, 0, 0.58);
+}
+
+.txt {
+    color: rgb(74, 74, 74) !important;
+    font-size: 16px important;
+}
+
+.pricePart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.pricePartLeft>h3>span {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.19);
+    text-decoration: line-through;
+}
+
+.pricePartLeft>h3 {
+    font-size: 35px;
+    color: rgb(7, 168, 154);
+}
+
+.saleAmount {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin: 0px 200px 0px 0px;
+    padding: 5px;
+    gap: 10px;
+    background-color: rgb(7, 168, 154);
+}
+
+.saleAmountIcon {
+    width: 20px;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.saleAmountIcon>img {
+    width: 100%;
+}
+
+.saleTxt>h3 {
+    color: #fff;
+    font-size: 15px;
+}
+
+.guaranteesPoints {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.guaranteesPointsLine {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pointsIcon {
+    width: 20px;
+    display: flex;
+}
+
+.pointsIcon>img {
+    width: 100%;
+}
+
+.guaranteesTxt {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.orderSave {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.orderSave>a {
+    border-radius: 15px;
+    margin: 20px 0px 0px;
+    padding: 20px 30px;
+    background-color: rgb(7, 168, 154);
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: RGB(37 42 50 / 32%) 0 1px 4px 1px;
+}
+
+.orderSave>a>span {
+    color: #f6f9fe;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+}
+
+.guaranteesIconTxt {
+    display: flex;
+    justify-content: space-between;
+}
+
+.guaranteesIcon {
+    width: 55px;
+    height: auto;
+}
+
+.guaranteesIconLine {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.guaranteesIcon>img {
+    width: 100%;
+}
+
+.userComment {
+    width: 540px;
+}
+
+.userCommentContain {
+    border-radius: 15px;
+    margin: 20px 0px 0px;
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 9px
+}
+
+.userInfo {
+    display: flex;
+    gap: 20px;
+}
+
+.userPhoto {
+    width: 55px;
+}
+
+.userPhoto>img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.nameGrand {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nameGrand>span {
+    width: 27px;
+}
+
+.nameGrand>p {
+    color: rgb(48, 48, 48);
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.nameGrand>span>img {
+    width: 100%;
+}
+
+.verifiedUser {
+    font-size: 13px;
+    color: rgb(46, 64, 140);
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.userOpinion>p {
+    font-size: 16px;
+    color: rgb(48, 48, 48);
+    line-height: 1.5;
+    text-align: left;
+    margin-top: 18px;
+}
+
+.recensiesPart {
+    display: flex;
+    flex-direction: column;
+}
+
+.realExperience {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.realExperienceContain {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 0 200px;
+}
+
+.secondSection {
+    width: 100%;
+    padding: 60px 0px;
+    background-color: rgb(222, 246, 235);
+}
+
+.realExperienceLeftPart>a {
+    width: 140px;
+    border-radius: 500px;
+    margin: 0px;
+    font-size: 14px;
+    text-align: center;
+    padding: 5px 15px;
+    background-color: rgb(0, 157, 233);
+    box-shadow: transparent 0px 0px 0px 0px;
+    margin-bottom: 20px;
+    color: #f6f9fe;
+    cursor: pointer;
+}
+
+.rightPartGif {
+    width: 500px;
+}
+
+.realExperienceLeftPart {
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+}
+
+.realExperienceLeftPart2 {
+    display: flex;
+    flex-direction: column;
+    width: 470px;
+}
+
+.rightPartGif>img {
+    width: 100%;
+    border: 5px solid rgb(7, 168, 154);
+    border-radius: 15px;
+}
+
+.realExperienceLeftPart>h1 {
+    font-weight: 700;
+    font-size: 31px;
+}
+
+.realExperienceLeftPart2>h1>span {
+    color: rgb(7, 168, 154);
+}
+
+.realExperienceLeftPart2>h1 {
+    font-weight: 700;
+    font-size: 31px;
+}
+
+.realExperienceLeftPart>h1>span {
+    color: rgb(7, 168, 154);
+}
+
+
+.realExperienceTxt {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.realExperienceTxt>p {
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.realExperienceTxt>p>span {
+    font-weight: 600;
+}
+
+.realExperienceTxt2>p {
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.realExperienceTxt2>p>span {
+    font-weight: 600;
+}
+
+.realExperienceTxt>h3 {
+    text-align: center;
+    font-weight: 600;
+}
+
+.style {
+    margin: 0;
+}
+
+.secondSectionBottom {
+    width: 100%;
+}
+
+.secondSectionBottomGif {
+    width: 500px;
+}
+
+.secondSectionBottomGif>img {
+    width: 100%;
+    border: 5px solid rgb(7, 168, 154);
+    border-radius: 15px;
+}
+
+.secondSectionBottomContain {
+    margin: 0 400px;
+    padding: 70px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.realExperienceContain2 {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 0 200px;
+    align-items: center;
+}
+
+.aboutReviews>h3 {
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.aboutProduct {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.aboutProductIcon {
+    width: 20px;
+}
+
+.aboutProductIcon>img {
+    width: 100%;
+    display: flex;
+}
+
+.aboutProductIcon>p {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.thirdSection {
+    width: 100%;
+    padding: 20px 0px;
+    background-color: rgb(30, 30, 30);
+}
+
+.thirdSection>ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 200px;
+}
+
+.thirdSection>ul>li {
+    width: 230px;
+    height: 90px;
+    list-style: none;
+}
+
+.thirdSection>ul>li>a>img {
+    width: 100%;
+    height: 100%;
+}
+
+.section4 {
+    padding: 40px 0;
+    background-image: url("https://img.funnelish.com/10101/169449/1700600816-Copia%20di%20Progetto%20senza%20titolo%20%2837%29.png?auto=webp&clip=bounds");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.section4 >p{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.section4 >h1{
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.positiveReview {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.greenNumberContain {
+    border-radius: 15px;
+    padding: 10px 20px;
+    width: 100px;
+    height: 76px;
+    background-color: rgb(0, 163, 116);
+    box-shadow: transparent 0px 0px 0px 0px;
+    border-radius: 5px;
+    color: #DEF6EB;
+}
+.greenNumber {
+    width: 28%;
+    display: flex;
+    justify-content: flex-end;
+}
+.positiveReviewTxt {
+    width: 28%;
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+}
+.bigNum {
+    font-size: 38px;
+    font-weight: 600;
+}
+.positiveReviewTxt > p{
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.userComments {
+    width: 900px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+    gap: 30px;
+}
+.userCommentsContain {
+    width: 350px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 0px 9px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.userCommentsContain > img {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.userPhoto2 {
+    width: 55px;
+}
+.userPhoto2 > img{
+    width: 100%;
+    border-radius: 50%;
+}
+.nameGrand2 {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.nameGrand2>span {
+    width: 27px;
+}
+
+.nameGrand2>p {
+    color: rgb(48, 48, 48);
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.nameGrand2>span>img {
+    width: 100%;
+}
+.aboutUser {
+    padding: 10px 15px;
+}
+.userName2 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.commentTxt {
+    font-size: 16px;
+    color: rgb(48, 48, 48);
+    line-height: 1.5;
+    text-align: left;
+    margin-top: 18px;
+}
+.userStars {
+    border-radius: 500px;
+    margin: -15px -30px 0px 75px;
+    padding: 10px 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 0px 9px;
+    width: 142px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.userStars > span {
+    font-size: 18px; 
+    text-align: center;
+}
+.section5 {
+    width: 100%;
+    padding: 10px 0px;
+    background-color: rgb(30, 30, 30);
+    text-align: center;
+}
+.section5 > h2 {
+    font-weight: 500;
+    font-size: 31px;
+    color: #DEF6EB;
+}
+.section5 > h2 > span {
+    color: rgb(7, 168, 154)!important;
+}
+.section6 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section6Contain {
+    width: 600px;
+    text-align: center;
+    padding: 40px 0;
+}
+.section6Contain>h2 {
+    margin-bottom: 30px;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.menuPart > ul {
+    display: flex;
+    flex-direction: column;    
+}
+.menuPart > ul >li {
+    list-style: none; 
+    cursor: pointer;   
+}
+.menuTxt {
+    color: rgb(48, 48, 48);
+    font-size: 22px;
+}
+.linkLine {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10px;
+    position: relative;
+    text-align: left;
+    
+}
+.linkLine:hover {
+    background-color: #F9F3F1;
+    font-weight: 600;
+}
+.dropDownMenu {
+    padding: 20px 10px;
+    display: none;
+    position: absolute;
+    width: 600px;
+    background-color: #fff;
+    z-index: 1;
+}
+.dropDownMenu > p{
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.4;
+
+}
+
+.show {
+    display: block;
+  }
+.section7 {
+    width: 100%;
+    background-color: rgb(222, 246, 235);
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+.section7Contain {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.section7ContainImg {
+    width: 500px;
+}
+.section7ContainImg > img {
+    width: 100%;
+}
+.productInfo {
+    color: rgb(7, 168, 154);
+    display: flex;
+    flex-direction: column;
+}
+.bestelContain {
+    margin: 10px 0px 0px;
+    padding: 15px 30px;
+    background-color: rgb(7, 168, 154);
+    color: #DEF6EB;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 60px;
+    align-items: center;
+}
+.productInfoFirstPart {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.productInfoSecondPart {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.productInfoFirstPart > h3 {
+    font-size: 55px;
+    font-weight: 600;
+}
+.productInfoFirstPart > h2{
+    font-size: 95px;
+    font-weight: 900;
+}
+.productInfoFirstPart > p {
+    font-weight: 700;
+    font-size: 27px;
+    margin-top: 10px;
+}
+
+.bestelContain > a {
+    text-decoration: none;
+    color: #DEF6EB;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+}
+.productInfoThirdPart {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.productInfoThirdPart > p{
+    font-size: 23px;
+    font-weight: 700;
+}
+.section8 {
+    width: 100%;
+    padding: 20px 15px;
+    height: 70px;
+    background-color: rgb(222, 246, 235);
+}
+.stickyPart{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0px;
+    position: sticky;
+    z-index: 10;
+    bottom: 0px;
+    background-color: rgba(204, 0, 0, 0);
+    z-index: 4;
+    visibility: hidden;
+}
+.visible {
+    visibility: visible;
+}
+.stickyImg {
+    width: 300px;
+}
+.stickyImg > img {
+    width: 100%;
+}
+footer {
+    padding: 60px 0px;
+    background-color: rgb(30, 30, 30);
+    color: rgba(255, 255, 255, 0.72);
+}
+.contactInfoPart {
+    display: flex;
+    justify-content: space-around;
+}
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 16px;
+    color: #fff!important;
+}
+.footerRightPart >h4 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+.footerRightPartMenu {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.footerRightPartMenu > li > a {
+    color: rgba(255, 255, 255, 0.72);
+}
+.infoImg {
+    width: 470px;
+}
+.infoImg > img {
+    width: 100%;
+}
